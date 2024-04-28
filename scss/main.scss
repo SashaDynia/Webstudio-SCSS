@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular&display=swap);
+
+
+//!Import base
+@import './base/reset.scss';
+@import './base/variables.scss';
+@import './base/mixins.scss';
+
+body {
+	font-family: $secondaryFontFamily;
+}
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+//! components
+@import './components/header.scss';
+@import './components/footer.scss';
+
+//! pages
+@import './pages/home.scss'; 
+@import './pages/portfolio.scss';

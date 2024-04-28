@@ -1,0 +1,186 @@
+@import '../base/variables.scss';
+.header {
+    background-color: #ffffff;
+        // .header__container
+    
+        &__container {
+            display: flex;
+            gap: 93px;
+        }
+    
+        // .header__logos
+    
+        &__logos {
+                text-decoration: none;
+                font-size: 26px;
+                font-family: 'Raleway', sans-serif;
+                &>span {
+                    text-decoration: none;
+                    color: $hoverColor;
+                    font-family: 'Raleway' sans-serif;
+                    font-size: 26px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.78px;
+                }
+                &>b {
+                    text-decoration: none;
+                    color: $whiteColor;
+                    font-family: 'Raleway' sans-serif;
+                    font-size: 26px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.78px;
+                }
+            }
+        }
+    
+        // .header__logo
+    
+        &__logo {
+            color: $textColor;
+        }
+    
+        // .header__span
+    
+        &__span {
+            color: $hoverColor;
+        }
+    
+        // .header__navigation
+    
+        &__navigation {
+        }
+    
+        // .header__list
+    
+        &__list {
+            padding-top: 32px;
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+    
+            text-decoration: none;
+            color: #212121;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.28px;
+            transition: all 0.3s ease 0s;
+            justify-content: space-around;
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+    
+        // .header__item
+    
+        &__item {
+        }
+    
+        // .header__link
+    
+        &__link {
+        }
+    
+        // .header__information
+    
+        &__information {
+            display: flex;
+            gap: 30px;
+            padding-top: 32px;
+          padding-left: 318px;
+        }
+    
+        // .header__info
+    
+        &__info {
+            color: $infoPhoneColor;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.28px;
+    
+            &>svg  {
+                width: 16px;
+                height: 12px;
+            }
+            // .header__info-item
+    
+            &-item {
+                transition: color 0.3s ease 0s, fill 0.3s ease 0s;
+                &:hover{ 
+                    color: $hoverColor;
+                    fill: $hoverColor;
+                }
+            // .header__info-item
+    
+            &-item {
+            }
+    
+            // .header__link
+    
+            &_link {
+                color: $linkColor;
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              letter-spacing: 0.28px;
+              transition: color 0.3s ease 0s;
+              
+              position: relative;
+              &:hover {
+                color: $hoverColor;
+              }
+    
+              &:hover:after,
+              &:focus:after {
+                  width: 100%; 
+              }
+              &:hover {
+                color: $hoverColor;
+            }
+            }
+    
+            // .header__info-number
+    
+            &-number {
+                display: flex;
+                color: $infoPhoneColor;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.28px;
+                transition: color 0.3s ease 0s;
+                &>svg {
+                    width: 10px;
+                    height: 16px;
+                }
+                &:hover {
+                    color: $hoverColor;
+                }
+            }
+        }
+    }
+    
+.active {
+    
+    &::after {
+        display: block;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 5px; 
+	content: '';
+	transition: width 0.2s ease-out;
+  border-radius: 10px;
+  margin-top: 28px;
+    }
+}
